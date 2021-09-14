@@ -1,0 +1,1 @@
+funcoes, constantes, utilitarios diversos
