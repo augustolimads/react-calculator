@@ -1,6 +1,6 @@
 ## TO DO
 
-- [ ] criar o background
+- [ x ] criar o background
 - [ ] criar o text
 - [ ] criar o card
 - [ ] criar os botões

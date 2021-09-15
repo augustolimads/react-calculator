@@ -1,6 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import Container from '.'
-import { ContainerProps } from '.'
+import Container, { ContainerProps } from '.'
 
 export default {
   title: 'Container',
@@ -15,5 +14,5 @@ export default {
 export const Default: Story<ContainerProps> = (args) => <Container {...args} />
 
 Default.args = {
-  children: 'Most Populars'
+  children: 'Content'
 }
