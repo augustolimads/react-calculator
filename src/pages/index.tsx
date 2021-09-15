@@ -1,5 +1,5 @@
-import Main from 'templates/Main'
+import Home from 'templates/Home'
 
 export default function Index() {
-  return <Main />
+  return <Home />
 }

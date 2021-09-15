@@ -1,8 +1,12 @@
 import * as S from './styles'
 
-const Container = () => (
+export type ContainerProps = {
+  children: React.ReactNode
+}
+
+const Container = ({ children }: ContainerProps) => (
   <S.Wrapper>
-    <span>Container</span>
+    <span>{children}</span>
   </S.Wrapper>
 )
 

@@ -1,11 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Container /> should render the heading 1`] = `
+exports[`<Container /> should render the children content 1`] = `
+.c0 {
+  height: 100vh;
+  width: 100%;
+  background-image: url('img/beautiful-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <main
-  class=""
+  class="c0"
 >
-  <h1>
-    Container
-  </h1>
+  <span>
+    testando container
+  </span>
 </main>
 `;
