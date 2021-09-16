@@ -14,7 +14,7 @@ export const Wrapper = styled.button<WrapperProps>`
     cursor: pointer;
     padding: ${theme.spacings.xsmall};
     text-decoration: none;
-    background-color: ${theme.colors[bgColor]};
+    background-color: ${theme.colors[bgColor!]};
     height: 100%;
     width: 100%;
   `}

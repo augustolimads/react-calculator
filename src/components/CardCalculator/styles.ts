@@ -1,35 +1,43 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
+import { Backspace } from '@styled-icons/ionicons-outline/Backspace'
 
 export const Wrapper = styled.div`
-  background: inherit;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
   width: 28em;
+  padding: 0.8em;
+
   ${media.lessThan('medium')`
   width: calc(100vw - 2.5em);
   `}
 `
 
 export const Head = styled.div`
-  border: 1px solid red;
+  ${({ theme }) => css`
+    background-color: ${theme.colors.secondary};
+    color: ${theme.colors.white};
+  `}
   display: flex;
+  height: 8em;
   align-items: center;
   justify-content: center;
   height: 6.4em;
   ${media.lessThan('medium')`
-  height: 8em;
   `}
 `
 
 export const Body = styled.div`
-  border: 1px solid red;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(4em, 1fr));
   grid-template-rows: repeat(5, 1fr);
+  gap: 0.16em;
 `
-export const Equal = styled.h2`
-  grid-column: 4 / 4;
-  grid-row-start: 4;
-  grid-row-end: span 5;
-  height: 100%;
-  width: 100%;
+export const Equal = styled.div`
+  grid-column: 4;
+  grid-row: 4 / span last-line;
 `
+
+export const BackspaceIcon = styled(Backspace).attrs(({ theme }) => ({
+  size: theme.font.sizes.xxlarge
+}))``

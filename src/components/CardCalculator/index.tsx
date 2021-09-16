@@ -1,3 +1,4 @@
+import Button from 'components/Button'
 import * as S from './styles'
 
 const CardCalculator = () => (
@@ -6,25 +7,34 @@ const CardCalculator = () => (
       <h2>head</h2>
     </S.Head>
     <S.Body>
-      <h2>C</h2>
-      <h2>%</h2>
-      <h2>/</h2>
-      <h2>x</h2>
-      <h2>7</h2>
-      <h2>8</h2>
-      <h2>9</h2>
-      <h2>+</h2>
-      <h2>4</h2>
-      <h2>5</h2>
-      <h2>6</h2>
-      <h2>-</h2>
-      <h2>1</h2>
-      <h2>2</h2>
-      <h2>3</h2>
-      <h2>back</h2>
-      <h2>0</h2>
-      <h2>.</h2>
-      <S.Equal>Equal</S.Equal>
+      <Button bgColor='lightGray'>C</Button>
+      <Button bgColor='lightGray'>%</Button>
+      <Button bgColor='lightGray'> ÷ </Button>
+      <Button bgColor='lightGray'>x</Button>
+
+      <Button bgColor='gray'>7</Button>
+      <Button bgColor='gray'>8</Button>
+      <Button bgColor='gray'>9</Button>
+      <Button bgColor='lightGray'> + </Button>
+
+      <Button bgColor='gray'>4</Button>
+      <Button bgColor='gray'>5</Button>
+      <Button bgColor='gray'>6</Button>
+      <Button bgColor='lightGray'> ˗ </Button>
+
+      <Button bgColor='gray'>1</Button>
+      <Button bgColor='gray'>2</Button>
+      <Button bgColor='gray'>3</Button>
+
+      <Button bgColor='gray'>
+        <S.BackspaceIcon />
+      </Button>
+      <Button bgColor='gray'>0</Button>
+      <Button>.</Button>
+
+      <S.Equal>
+        <Button bgColor='primary'> = </Button>
+      </S.Equal>
     </S.Body>
   </S.Wrapper>
 )

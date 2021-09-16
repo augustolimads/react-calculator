@@ -1,17 +1,14 @@
-import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
+import React from 'react'
 
 import Heading from 'components/Heading'
 import * as S from './styles'
+import { Children } from 'types/children'
 
 export type Colors = 'primary' | 'secondary' | 'lightGray' | 'gray'
 
-type ButtonTypes =
-  | ButtonHTMLAttributes<HTMLButtonElement>
-  | AnchorHTMLAttributes<HTMLAnchorElement>
-
 export type ButtonProps = {
   bgColor?: Colors
-  children: string
+  children: Children
   onClick?: () => (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
