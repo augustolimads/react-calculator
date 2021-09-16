@@ -1,10 +1,10 @@
 import Container from 'components/Container'
-import * as S from './styles'
+import CardCalculator from 'components/CardCalculator'
 
 const Home = () => {
   return (
     <Container>
-      <S.Title>Next Starter</S.Title>
+      <CardCalculator />
     </Container>
   )
 }
