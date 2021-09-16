@@ -1,7 +1,8 @@
+import { Children } from 'types/children'
 import * as S from './styles'
 
 export type ContainerProps = {
-  children: React.ReactNode
+  children: Children
 }
 
 const Container = ({ children }: ContainerProps) => (

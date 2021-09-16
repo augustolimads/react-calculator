@@ -1,1 +1,1 @@
-export type Children = JSX.Element | JSX.Element[] | string
+export type Children = React.ReactNode | JSX.Element | JSX.Element[] | string

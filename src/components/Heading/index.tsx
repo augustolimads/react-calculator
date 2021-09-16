@@ -1,17 +1,12 @@
+import { Children } from 'types/children'
 import * as S from './styles'
 
-export type Colors =
-  | 'primary'
-  | 'secondary'
-  | 'white'
-  | 'lightGray'
-  | 'gray'
-  | 'red'
+export type Colors = 'primary' | 'secondary' | 'white' | 'lightGray' | 'gray'
 
 export type Sizes = 'medium' | 'large' | 'xlarge' | 'xxlarge'
 
 export type HeadingProps = {
-  children: React.ReactNode
+  children: Children
   size?: Sizes
   color?: Colors
   h1?: boolean
@@ -24,7 +19,7 @@ const Heading = ({
   size = 'medium',
   color = 'white',
   h1 = false,
-  h2 = true,
+  h2 = false,
   h3 = false
 }: HeadingProps) => {
   if (h1 && !h2 && !h3) {

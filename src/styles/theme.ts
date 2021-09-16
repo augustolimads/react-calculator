@@ -23,16 +23,11 @@ export default {
     }
   },
   colors: {
-    primary: '#F231A5',
-    secondary: '#3CD3C1',
-    mainBg: '#06092B',
-    lightBg: '#F2F2F2',
+    primary: '#1874cd',
+    secondary: '#607b8b',
     white: '#FAFAFA',
-    black: '#030517',
-    lightGray: '#EAEAEA',
-    gray: '#8F8F8F',
-    darkGray: '#2E2F42',
-    red: '#FF6347'
+    lightGray: 'rgba(224, 238, 238, 0.5)',
+    gray: 'rgba(131, 139, 139, 0.5)'
   },
   spacings: {
     xxsmall: '0.8rem',
